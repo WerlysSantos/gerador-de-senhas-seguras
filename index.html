@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="src/style.css">
+    <title>Gerador de Senhas</title>
+</head>
+<body>
+    <h1>Gere sua senha segura!&#x1F512</h1>
+
+    <div class="container">
+
+        <div>
+            <input type="number" name="size" id="size">
+            <label for="size">
+                Quantidade de caracteres
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="include_uppercase" id="include_uppercase">
+            <label for="include_uppercase">
+                Incluir letra maiúscula
+            </label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="include_lowercase" id="include_lowercase">
+            <label for="include_lowercase">
+                Incluir letra minúscula
+            </label>
+        </div>     
+
+        <div>
+            <input type="checkbox" name="include_number" id="include_number">
+            <label for="include_number">
+                Incluir número
+            </label>
+        </div>        
+
+        <div>
+            <input type="checkbox" name="include_special_character" id="include_special_character">
+            <label for="include_special_character">
+                Incluir caractere especial
+            </label>
+        </div>
+
+        <button id="generate">Gerar Senha</button>
+    </div>
+
+    <div id="password_container">
+        <span id="password"></span>
+        <button id="copy">
+            <i class="fa-solid fa-copy"></i>
+        </button>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="src/script.js"></script>
+</body>
+
+</html>
